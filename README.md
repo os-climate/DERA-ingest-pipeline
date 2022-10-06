@@ -7,7 +7,7 @@ Data is central to DERA's mission.  The SEC requires all companies that trade on
 
 The principal notebook for implementing this pipeline is [DERA-ingest](notebooks/DERA-ingest.ipynb). It performs a basic ingestion of the SEC data, marrying company names to [Global Legal Entity Identifiers](https://www.gleif.org/en) where it can.  There are hundreds of millions of rows of data for just the past few years of annual reports, and we could increase that considerably by ingesting quarterly reports as well.  But so far there's no need for that.
 
-Once the basic financial data has been ingested, a second notebook ([SEC%20Corp%20Financials](notebooks/SEC%20Corp%20Financials.ipynb)) makes the data "easy to use" by summarizing market float (aka market cap), annual revneues, income, and reported cash, debt, and assets at the time of the annual report.  We also apply some crosswalks to make it easier to connect the SIC-based SEC data with ISIC codes used internationally.
+Once the basic financial data has been ingested, a second notebook ([SEC Corp Financials](notebooks/SEC%20Corp%20Financials.ipynb)) makes the data "easy to use" by summarizing market float (aka market cap), annual revneues, income, and reported cash, debt, and assets at the time of the annual report.  We also apply some crosswalks to make it easier to connect the SIC-based SEC data with ISIC codes used internationally.
 
 In the future this pipeline will use the [ESG Matching](https://github.com/os-climate/esg-matching) services of the [Data Commons](https://github.com/os-climate/os_c_data_commons).  As well we are looking at ingesting the more detailed DERA information so that analyses can be run on business segments, not only whole consolidated reporting entities.
 
