@@ -5,12 +5,39 @@ verify_ssl = true
 
 [dev-packages]
 flake8 = "*"
+isort = "*"
+black = "*"
 coverage = "*"
 Sphinx = "*"
+markupsafe = "*" # "==2.0.1"
 
 [packages]
 src = {editable = true, path = "./"}
-awscli = "*"
+osc-ingest-tools = "*"
+openpyxl = "==3.1.0" # 3.1.1 causes problems
+dbt-core = "==1.3.2" # {editable = true, path = "/opt/app-root/src/dbt-core/core/"}
+dbt-trino = "==1.3.2"
+ydata-profiling = "*"
+pyarrow = "*" # "==9.0.0"
+# fastparquet = "*"
+grpcio-health-checking = "==1.48.2"
+multidict = "==6.0.2" # Badly-behaved python-pachyderm looks for this version rather than 6.0.4 (current latest)
+python-pachyderm = "*"
+iam-units = "*"
+openscm-units = "*"
+Pint= "*"
+Pint-Pandas = "*"
+markupsafe = "*" # "==2.0.1"
+pyyaml = "*" # "==5.4.1"
+mashumaro = "*"
+# dash = "*" # ==2.4.1
+# dash_bootstrap_components = "*" # ==1.1.0
+# jupyter = "*" # ==1.0.0
+matplotlib = "*" # ==3.5.1
+pydantic = "*" # ==1.10.4
+pygithub = "*" # ==1.55
+xlrd = "*" # ==2.0.1
+pycountry = "*"
 
 [requires]
 python_version = "3.8"
