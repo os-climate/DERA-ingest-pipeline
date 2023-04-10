@@ -1,0 +1,224 @@
+version: 2
+
+models:
+  - name: dera_sub
+    description: "The submissions data set contains summary information about an entire EDGAR submission. Some fields were sourced directly from EDGAR submission information, while other columns of data were sourced from the Interactive Data attachments of the submission. Note: EDGAR derived fields represent the most recent EDGAR assignment as of a given filing’s submission date and do not necessarily represent the most current assignments."
+    columns:
+      - name: adsh
+        description: "Accession Number. The 20-character string formed from the 18-digit number assigned by the SEC to each EDGAR submission."
+        tests:
+          - unique
+          - not_null
+      - name: cik
+        description: "Central Index Key (CIK). Ten digit number assigned by the SEC to each registrant that submits filings."
+        tests:
+          - not_null
+      - name: name
+        description: "Name of registrant. This corresponds to the name of the legal entity as recorded in EDGAR as of the filing date."
+        tests:
+          - not_null
+      - name: sic
+        description: "Standard Industrial Classification (SIC). Four digit code assigned by the SEC as of the filing date, indicating the registrant’s type of business."
+        tests:
+      - name: countryba
+        description: "The ISO 3166-1 country of the registrant’s business address."
+        tests:
+          - not_null
+      - name: stprba
+        description: "The state or province of the registrant’s business address, if field countryba is US or CA."
+        tests:
+      - name: cityba
+        description: "The zip code of the registrant’s business address."
+        tests:
+          - not_null
+      - name: zipba
+        description: "The zip code of the registrant’s business address."
+        tests:
+      - name: bas1
+        description: "The first line of the street of the registrant’s business address."
+        tests:
+      - name: bas2
+        description: "The second line of the street of the registrant’s business address."
+        tests:
+      - name: baph
+        description: "The phone number of the registrant’s business address."
+        tests:
+      - name: countryma
+        description: "The ISO 3166-1 country of the registrant’s mailing address."
+        tests:
+          - not_null
+      - name: stprma
+        description: "The state or province of the registrant’s mailing address, if field countryba is US or CA."
+        tests:
+      - name: cityma
+        description: "The zip code of the registrant’s mailing address."
+        tests:
+          - not_null
+      - name: zipma
+        description: "The zip code of the registrant’s mailing address."
+        tests:
+      - name: mas1
+        description: "The first line of the street of the registrant’s mailing address."
+        tests:
+      - name: mas2
+        description: "The second line of the street of the registrant’s mailing address."
+        tests:
+      - name: countryinc
+        description: "The country of incorporation for the registrant."
+        tests:
+          - not_null
+      - name: stprinc
+        description: "The state or province of incorporation for the registrant, if countryinc is US or CA."
+        tests:
+      - name: ein
+        description: "Employee Identification Number, 9 digit identification number assigned by the Internal Revenue Service to business entities operating in the United States."
+        tests:
+      - name: former
+        description: "Most recent former name of the registrant, if any."
+        tests:
+      - name: changed
+        description: "Date of change from the former name, if any."
+        tests:
+      - name: afs
+        description: "Filer status with the SEC at the time of submission: 1-LAF=Large Accelerated, 2-AC C =Accelerated, 3-SRA=Smaller Reporting Accelerated, 4-NON=Non-Accelerated, 5-SML=Smaller Reporting Filer, NULL=not assigned."
+        tests:
+      - name: wksi
+        description: "Well Known Seasoned Issuer (WKSI). An issuer that meets specific SEC requirements at some point during a 60-day period preceding the date the issuer satisfies its obligation to update its shelf registration statement."
+        tests:
+          - not_null
+      - name: fye
+        description: "Fiscal Year End Date."
+        tests:
+          - not_null
+      - name: form
+        description: "The submission type of the registrant’s filing."
+        tests:
+          - not_null
+      - name: period
+        description: "Balance Sheet Date."
+        tests:
+          - not_null
+      - name: fy
+        description: "Fiscal Year Focus (as defined in EFM Ch.6)."
+        tests:
+          - not_null
+      - name: fp
+        description: "Fiscal Period Focus (as defined in EFM Ch. 6) within Fiscal Year. The 10-Q for the 1st, 2nd and 3rd quarters would have a fiscal period focus of Q1, Q2 (or H1), and Q3 (or M9) respectively, and a 10-K would have a fiscal period focus of FY."
+        tests:
+          - not_null
+      - name: filed
+        description: "The date of the registrant’s filing with the Commission."
+        tests:
+      - name: accepted
+        description: "The acceptance date and time of the registrant’s filing with the Commission. Filings accepted after 5:30pm EST are considered filed on the following business day."
+        tests:
+          - not_null
+      - name: prevrpt
+        description: "Previous Report –TRUE indicates that the submission information was subsequently amended."
+        tests:
+          - not_null
+      - name: detail
+        description: "TRUE indicates that the XBRL submission contains quantitative disclosures within the footnotes and schedules at the required detail level (e.g., each amount)."
+        tests:
+          - not_null
+      - name: instance
+        description: "The name of the submitted XBRL Instance Document (EX- 101.INS) type data file. The name often begins with the company ticker symbol."
+        tests:
+          - not_null
+      - name: nciks
+        description: "Number of Central Index Keys (CIK) of registrants (i.e., business units) included in the consolidating entity’s submitted filing."
+        tests:
+          - not_null
+      - name: aciks
+        description: "Additional CIKs of co- registrants included in a consolidating entity’s EDGAR submission, separated by spaces. If there are no other co-registrants (i.e., nciks=1), thevalueofaciksisNULL. For a very small number of filers, the list of co-registrants is too long to fit in the field. Where this is the case, PARTIAL will appear at the end of the list indicating that not all co- registrants’ CIKs are included in the field; users should refer to the complete submission file for all CIK information."
+        tests:
+  
+  - name: dera_tag
+    description: "The TAG data set contains all standard taxonomy tags, not just those appearing in submissions to date, and also includes all custom taxonomy tags defined in the submissions. The source is the “as filed” XBRL filer submissions. The standard tags are derived from taxonomies in http://www.sec.gov/info/edgar/edgartaxonomies.shtml."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - tag
+            - version
+    columns:
+      - name: tag
+        description: "The unique identifier (name) for a tag in a specific taxonomy release."
+        tests:
+          - not_null
+      - name: version
+        description: "For a standard tag, an identifier for the taxonomy; otherwise the accession number where the tag was defined."
+        tests:
+          - not_null
+      - name: custom
+        description: "1 if tag is custom (version=adsh), 0 if it is standard. Note: This flag is technically redundant with the version and adsh columns."
+        tests:
+          - not_null
+      - name: abstract
+        description: "1 if the tag is not used to represent a numeric fact."
+        tests:
+          - not_null
+      - name: datatype
+        description: "If abstract=1, then NULL, otherwise the data type (e.g., monetary) for the tag."
+        tests:
+      - name: iord
+        description: "If abstract=1, then NULL; otherwise, “I” if the value is a point-in time, or “D” if the value is a duration."
+        tests:
+          - not_null
+      - name: crdr
+        description: "If datatype = monetary, then the tag’s natural accounting balance (debit or credit); if not defined, then NULL."
+        tests:
+      - name: tlabel
+        description: "If a standard tag, then the label text provided by the taxonomy, otherwise the text provided by the filer. A tag which had neither would have a NULL value here."
+        tests:
+      - name: doc
+        description: "The detailed definition for the tag (truncated to 2048 characters). If a standard tag, then the text provided by the taxonomy, otherwise the text assigned by the filer. Some tags have neither, and this field is NULL."
+        tests:
+  
+  - name: dera_num
+    description: "The NUM data set contains numeric data, one row per data point in the financial statements. The source for the table is the “as filed” XBRL filer submissions."
+    tests:
+      - dbt_utils.unique_combination_of_columns:
+          combination_of_columns:
+            - adsh
+            - tag
+            - version
+            - coreg
+            - ddate
+            - qtrs
+            - uom
+    columns:
+      - name: adsh
+        description: "Accession Number. The 20-character string formed from the 18-digit number assigned by the SEC to each EDGAR submission."
+        tests:
+          - not_null
+      - name: tag
+        description: "The unique identifier (name) for a tag in a specific taxonomy release."
+        tests:
+          - not_null
+      - name: version
+        description: "For a standard tag, an identifier for the taxonomy; otherwise the accession number where the tag was defined."
+        tests:
+          - not_null
+      - name: coreg
+        description: "If specified, indicates a specific co-registrant, the parent company, or other entity (e.g., guarantor). NULL indicates the consolidated entity."
+        tests:
+      - name: ddate
+        description: "The end date for the data value, rounded to the nearest month end."
+        tests:
+          - not_null
+      - name: qtrs
+        description: "The count of the number of quarters represented by the data value, rounded to the nearest whole number. “0” indicates it is a point-in-time value."
+        tests:
+          - not_null
+      - name: uom
+        description: "The unit of measure for the value."
+        tests:
+          - not_null
+      - name: value
+        description: "The value. This is not scaled, it is as found in the Interactive Data file, but is limited to four digits to the right of the decimal point."
+        tests:
+      - name: footnote
+        description: "The text of any superscripted footnotes on the value, as shown on the statement page, truncated to 512 characters, or if there is no footnote, then this field will be blank."
+        tests:
+
+# We don't yet handle PRE
