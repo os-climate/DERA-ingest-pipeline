@@ -14,12 +14,6 @@ exclude: |
 
 repos:
 
-  # - repo: https://gitlab.com/vojko.pribudic/pre-commit-update
-  #   rev: v0.1.0
-  #   hooks:
-  #     - id: pre-commit-update
-  #       args: [--dry-run]
-
   - repo: local
     hooks:
       - id: tomllint
@@ -73,12 +67,6 @@ repos:
       - id: markdownlint
         args: ["--fix"]
 
-  # - repo: https://github.com/asottile/pyupgrade
-  #   rev: v3.15.0
-  #   hooks:
-  #     - id: pyupgrade
-  #       args: ['--py37-plus']
-
   - repo: https://github.com/psf/black-pre-commit-mirror
     rev: 24.4.2
     hooks:
@@ -107,17 +95,6 @@ repos:
       - id: shellcheck
       # Optionally only show errors and warnings
       # args: ["--severity=warning"]
-
-  # If you want to avoid flake8 errors due to unused vars or imports:
-  # - repo: https://github.com/PyCQA/autoflake
-  #   rev: v2.0.0
-  #   hooks:
-  #   - id: autoflake
-  #     args: [
-  #       --in-place,
-  #       --remove-all-unused-imports,
-  #       --remove-unused-variables,
-  #     ]
 
   - repo: https://github.com/pycqa/pydocstyle.git
     rev: 6.3.0
