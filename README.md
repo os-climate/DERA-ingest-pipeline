@@ -1,74 +1,17 @@
-project-template
+SEC DERA Ingestion Pipeline
 ==============================
 
-template for the team to use
+The [Division of Economic and Risk Analysis](https://www.sec.gov/dera) (DERA) was created in September 2009 to integrate financial economics and rigorous data analytics into the core mission of the SEC. The Division is involved across the entire range of SEC activities, including policy-making, rule-making, enforcement, and examination.
 
-Project Organization
-------------
+Data is central to DERA's mission.  The SEC requires all companies that trade on US stock exchanges to make certain data available, and DERA collects and publishes that data.  A summary for of that data is listed as [Financial Statements](https://www.sec.gov/dera/data/financial-statement-data-sets.html) and a more detailed version is listed as [Financial Statements and Notes](https://www.sec.gov/dera/data/financial-statement-and-notes-data-set.html).
 
-    ├── LICENSE
-    ├── Makefile                                <- Makefile with commands like `make data` or `make train`
-    ├── Pipfile                                 <- Pipfile stating package configuration as used by Pipenv.
-    ├── Pipfile.lock                            <- Pipfile.lock stating a pinned down software stack with as used by Pipenv.
-    ├── README.md                               <- The top-level README for developers using this project.
-    ├── data
-    │   ├── external                            <- Data from third party sources.
-    │   ├── interim                             <- Intermediate data that has been transformed.
-    │   ├── processed                           <- The final, canonical data sets for modeling.
-    │   └── raw                                 <- The original, immutable data dump.
-    │
-    ├── docs                                    <- A default Sphinx project; see sphinx-doc.org for details
-    │
-    ├── models                                  <- Trained and serialized models, model predictions, or model summaries
-    │
-    ├── notebooks                               <- Jupyter notebooks. Naming convention is a number (for ordering),
-    │                                               the creator's initials, and a short `-` delimited description, e.g.
-    │                                               `1.0-jqp-initial-data-exploration`.
-    │
-    ├── references                              <- Data dictionaries, manuals, and all other explanatory materials.
-    │
-    ├── reports                                 <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures                             <- Generated graphics and figures to be used in reporting
-    │
-    ├── requirements.txt                        <- The requirements file stating direct dependencies if a library
-    │                                               is developed.
-    │
-    ├── setup.py                                <- makes project pip installable (pip install -e .) so src can be imported
-    ├── src                                     <- Source code for use in this project.
-    │   ├── __init__.py                         <- Makes src a Python module
-    │   │
-    │   ├── data                                <- Scripts to download or generate data
-    │   │   └── make_dataset.py
-    │   │
-    │   ├── features                            <- Scripts to turn raw data into features for modeling
-    │   │   └── build_features.py
-    │   │
-    │   ├── models                              <- Scripts to train models and then use trained models to make
-    │   │   │                                       predictions
-    │   │   ├── predict_model.py
-    │   │   └── train_model.py
-    │   │
-    │   └── visualization                       <- Scripts to create exploratory and results oriented visualizations
-    │       └── visualize.py
-    │
-    ├── .thoth.yaml                             <- Thoth's configuration file
-    ├── .aicoe-ci.yaml                          <- AICoE CI configuration file (https://github.com/AICoE/aicoe-ci)
-    │
-    ├── .github                                 <- GitHub configuration folder
-    │   ├── PULL_REQUEST_TEMPLATE               <- GitHub templates for pull requests
-    │   │
-    │   ├── ISSUE_TEMPLATE                      <- GitHub templates for issues
-    |       ├── {major|minor|patch}_release.md  <- If Khebut GitHub App Bot (https://github.com/apps/khebhut) is installed, the issue will trigger a major|minor|patch release.
-    │       |                                       The bot will open a Pull Request to update the CHANGELOG and fix the opened issue.
-    │       |                                       NOTE: only users that are allowed to release (a.k.a. maintainers specified in the .thoth.yaml file) should open the issue, otherwise bot will
-    │       |                                       reject them, commenting and closing the issue.
-    │       |                                       If AICoE CI GitHub App (https://github.com/apps/aicoe-ci) is installed, once the pull request is merged a new tag is created by the bot
-    │       |                                       and the pipeline to build and push image starts.
-    │       |
-    |       └── redeliver_container_image.md    <- If the tag exists and AICoE CI GitHub App (https://github.com/apps/aicoe-ci) is installed, the issue will retrigger the pipeline to build and
-    │                                               push image container image. NOTE: It should be used if the pipeline triggered with the {major|minor|patch}_release failed for any reason.
-    |
-    └── tox.ini                                 <- tox file with settings for running tox; see tox.readthedocs.io
+The principal notebook for implementing this pipeline is [DERA-ingest](notebooks/DERA-ingest.ipynb). It performs a basic ingestion of the SEC data, marrying company names to [Global Legal Entity Identifiers](https://www.gleif.org/en) where it can.  There are hundreds of millions of rows of data for just the past few years of annual reports, and we could increase that considerably by ingesting quarterly reports as well.  But so far there's no need for that.
+
+Once the basic financial data has been ingested, a second notebook ([SEC Corp Financials](notebooks/SEC%20Corp%20Financials.ipynb)) makes the data "easy to use" by summarizing market float (aka market cap), annual revneues, income, and reported cash, debt, and assets at the time of the annual report.  We also apply some crosswalks to make it easier to connect the SIC-based SEC data with ISIC codes used internationally.
+
+In the future this pipeline will use the [ESG Matching](https://github.com/os-climate/esg-matching) services of the [Data Commons](https://github.com/os-climate/os_c_data_commons).  As well we are looking at ingesting the more detailed DERA information so that analyses can be run on business segments, not only whole consolidated reporting entities.
+
+If you have questions, please file [Issues](https://github.com/os-climate/itr-data-pipeline/issues).  If you have answers, please contribute [Pull Requests](https://github.com/os-climate/itr-data-pipeline/pulls)!
 
 --------
 

@@ -1,3 +1,6 @@
+# Credentials / Secrets
+credentials.env
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -87,3 +90,12 @@ docs/_build/
 
 # Mypy cache
 .mypy_cache/
+
+dbt/dera_transform/dbt_packages/
+dbt/dera_transform/logs/
+dbt/dera_transform/models/
+dbt/dera_transform/packages.yml
+dbt/dera_transform/target/compiled/
+dbt/dera_transform/target/graph.gpickle
+dbt/dera_transform/target/partial_parse.msgpack
+dbt/dera_transform/target/run/
