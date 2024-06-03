@@ -1,1 +1,721 @@
-{"metadata": {"dbt_schema_version": "https://schemas.getdbt.com/dbt/run-results/v4.json", "dbt_version": "1.4.9", "generated_at": "2024-04-28T13:47:12.410232Z", "invocation_id": "422d69c7-11f1-452a-80ba-b71516dcef6c", "env": {}}, "results": [{"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:46:45.966747Z", "completed_at": "2024-04-28T13:46:45.976588Z"}, {"name": "execute", "started_at": "2024-04-28T13:46:45.977413Z", "completed_at": "2024-04-28T13:46:53.855332Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 7.906444787979126, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.dbt_utils_unique_combination_of_columns_dera_tag_tag__version.f08a69ccd0"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:46:53.859320Z", "completed_at": "2024-04-28T13:46:53.866940Z"}, {"name": "execute", "started_at": "2024-04-28T13:46:53.867345Z", "completed_at": "2024-04-28T13:46:56.116829Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 2.2591898441314697, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_num_adsh.9f59226eb6"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:46:56.120378Z", "completed_at": "2024-04-28T13:46:56.125465Z"}, {"name": "execute", "started_at": "2024-04-28T13:46:56.125956Z", "completed_at": "2024-04-28T13:46:57.341494Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 1.222827672958374, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_num_ddate.8306d50674"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:46:57.346548Z", "completed_at": "2024-04-28T13:46:57.353716Z"}, {"name": "execute", "started_at": "2024-04-28T13:46:57.354142Z", "completed_at": "2024-04-28T13:46:58.141417Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.7967791557312012, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_num_qtrs.af7f1b7174"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:46:58.145225Z", "completed_at": "2024-04-28T13:46:58.150574Z"}, {"name": "execute", "started_at": "2024-04-28T13:46:58.150948Z", "completed_at": "2024-04-28T13:46:59.130266Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.9868028163909912, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_num_tag.0207c00c1c"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:46:59.132880Z", "completed_at": "2024-04-28T13:46:59.137931Z"}, {"name": "execute", "started_at": "2024-04-28T13:46:59.138328Z", "completed_at": "2024-04-28T13:46:59.760455Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.6291389465332031, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_num_uom.a092d9419c"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:46:59.763441Z", "completed_at": "2024-04-28T13:46:59.768974Z"}, {"name": "execute", "started_at": "2024-04-28T13:46:59.769376Z", "completed_at": "2024-04-28T13:47:00.421950Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.6614220142364502, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_num_version.77a530fdb5"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:00.426217Z", "completed_at": "2024-04-28T13:47:00.430849Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:00.431318Z", "completed_at": "2024-04-28T13:47:01.282116Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.8575339317321777, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_accepted.14a16af61e"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:01.285026Z", "completed_at": "2024-04-28T13:47:01.291269Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:01.291671Z", "completed_at": "2024-04-28T13:47:02.075349Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.792208194732666, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_adsh.7840085517"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:02.078553Z", "completed_at": "2024-04-28T13:47:02.084280Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:02.084738Z", "completed_at": "2024-04-28T13:47:02.896155Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.819329023361206, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_cik.b09d93c4ac"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:02.899186Z", "completed_at": "2024-04-28T13:47:02.904907Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:02.905368Z", "completed_at": "2024-04-28T13:47:03.603580Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.7063040733337402, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_cityba.d43fdb914a"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:46:45.950891Z", "completed_at": "2024-04-28T13:46:45.976832Z"}, {"name": "execute", "started_at": "2024-04-28T13:46:45.991624Z", "completed_at": "2024-04-28T13:47:04.059844Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 18.112982034683228, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.dbt_utils_unique_combination_of_columns_dera_num_adsh__tag__version__coreg__ddate__qtrs__uom.67da21a8d1"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:03.607202Z", "completed_at": "2024-04-28T13:47:03.612664Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:03.613060Z", "completed_at": "2024-04-28T13:47:04.343207Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.7388741970062256, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_cityma.e0529eeff9"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:04.064475Z", "completed_at": "2024-04-28T13:47:04.069178Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:04.069636Z", "completed_at": "2024-04-28T13:47:04.729484Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.6680240631103516, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_countryba.a60eb90641"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:04.347190Z", "completed_at": "2024-04-28T13:47:04.351342Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:04.351719Z", "completed_at": "2024-04-28T13:47:05.082368Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.7378590106964111, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_countryinc.6ddb770117"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:04.733840Z", "completed_at": "2024-04-28T13:47:04.738664Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:04.739114Z", "completed_at": "2024-04-28T13:47:05.363417Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.6325271129608154, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_countryma.1ac642f0ee"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:05.086402Z", "completed_at": "2024-04-28T13:47:05.091093Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:05.091541Z", "completed_at": "2024-04-28T13:47:05.785998Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.7022261619567871, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_detail.ca1aaddad4"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:05.367683Z", "completed_at": "2024-04-28T13:47:05.372459Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:05.372920Z", "completed_at": "2024-04-28T13:47:06.056531Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.6918363571166992, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_form.f00a6ea664"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:05.789847Z", "completed_at": "2024-04-28T13:47:05.794069Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:05.794463Z", "completed_at": "2024-04-28T13:47:06.537110Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.7499871253967285, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_fp.1365472feb"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:06.060762Z", "completed_at": "2024-04-28T13:47:06.065349Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:06.065781Z", "completed_at": "2024-04-28T13:47:06.774254Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.7165439128875732, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_fy.65804aa8b8"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:06.541275Z", "completed_at": "2024-04-28T13:47:06.546354Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:06.546851Z", "completed_at": "2024-04-28T13:47:07.168952Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.6300830841064453, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_fye.6321eacfb4"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:06.778594Z", "completed_at": "2024-04-28T13:47:06.782884Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:06.783256Z", "completed_at": "2024-04-28T13:47:07.511519Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.7563810348510742, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_instance.88ce3242b5"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:07.172321Z", "completed_at": "2024-04-28T13:47:07.176740Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:07.177149Z", "completed_at": "2024-04-28T13:47:07.963187Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.793346643447876, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_name.c7c4776c8f"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:07.536970Z", "completed_at": "2024-04-28T13:47:07.542025Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:07.542464Z", "completed_at": "2024-04-28T13:47:08.270848Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.7364792823791504, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_nciks.6409f1da5c"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:07.967137Z", "completed_at": "2024-04-28T13:47:08.025690Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:08.026225Z", "completed_at": "2024-04-28T13:47:08.756315Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.7917370796203613, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_period.2f29ed92e0"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:08.274744Z", "completed_at": "2024-04-28T13:47:08.281436Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:08.281984Z", "completed_at": "2024-04-28T13:47:08.996105Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.7233362197875977, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_prevrpt.332f49b983"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:08.771335Z", "completed_at": "2024-04-28T13:47:08.795067Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:08.796005Z", "completed_at": "2024-04-28T13:47:09.555558Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.792428731918335, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_sub_wksi.2b689b26df"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:09.001733Z", "completed_at": "2024-04-28T13:47:09.013351Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:09.013899Z", "completed_at": "2024-04-28T13:47:09.873992Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.8819029331207275, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_tag_abstract.0eb052e487"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:09.564480Z", "completed_at": "2024-04-28T13:47:09.576550Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:09.577142Z", "completed_at": "2024-04-28T13:47:10.318208Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.7583510875701904, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_tag_custom.83ea4d3d09"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:09.888789Z", "completed_at": "2024-04-28T13:47:09.904165Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:09.905305Z", "completed_at": "2024-04-28T13:47:10.627207Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.7460651397705078, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_tag_iord.18714c69d6"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:10.322268Z", "completed_at": "2024-04-28T13:47:10.326814Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:10.327245Z", "completed_at": "2024-04-28T13:47:11.031995Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 0.7334659099578857, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_tag_tag.fd8a9676a2"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:10.634298Z", "completed_at": "2024-04-28T13:47:10.642587Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:10.644385Z", "completed_at": "2024-04-28T13:47:11.328634Z"}], "thread_id": "Thread-1 (worker)", "execution_time": 0.6962213516235352, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.not_null_dera_tag_version.8f1dd6934e"}, {"status": "pass", "timing": [{"name": "compile", "started_at": "2024-04-28T13:47:11.062104Z", "completed_at": "2024-04-28T13:47:11.071966Z"}, {"name": "execute", "started_at": "2024-04-28T13:47:11.073005Z", "completed_at": "2024-04-28T13:47:12.405289Z"}], "thread_id": "Thread-2 (worker)", "execution_time": 1.3467161655426025, "adapter_response": {}, "message": null, "failures": 0, "unique_id": "test.dera_transform.unique_dera_sub_adsh.caa0cfea70"}], "elapsed_time": 26.77405309677124, "args": {"write_json": true, "use_colors": true, "printer_width": 80, "version_check": true, "partial_parse": true, "static_parser": true, "profiles_dir": "/Users/michael/Documents/GitHub", "send_anonymous_usage_stats": true, "quiet": false, "no_print": false, "cache_selected_only": false, "indirect_selection": "eager", "which": "test", "rpc_method": "test"}}
+{
+  "metadata": {
+    "dbt_schema_version": "https://schemas.getdbt.com/dbt/run-results/v4.json",
+    "dbt_version": "1.4.9",
+    "generated_at": "2024-04-28T13:47:12.410232Z",
+    "invocation_id": "422d69c7-11f1-452a-80ba-b71516dcef6c",
+    "env": {}
+  },
+  "results": [
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:46:45.966747Z",
+          "completed_at": "2024-04-28T13:46:45.976588Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:46:45.977413Z",
+          "completed_at": "2024-04-28T13:46:53.855332Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 7.906444787979126,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.dbt_utils_unique_combination_of_columns_dera_tag_tag__version.f08a69ccd0"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:46:53.859320Z",
+          "completed_at": "2024-04-28T13:46:53.866940Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:46:53.867345Z",
+          "completed_at": "2024-04-28T13:46:56.116829Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 2.2591898441314697,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_num_adsh.9f59226eb6"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:46:56.120378Z",
+          "completed_at": "2024-04-28T13:46:56.125465Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:46:56.125956Z",
+          "completed_at": "2024-04-28T13:46:57.341494Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 1.222827672958374,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_num_ddate.8306d50674"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:46:57.346548Z",
+          "completed_at": "2024-04-28T13:46:57.353716Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:46:57.354142Z",
+          "completed_at": "2024-04-28T13:46:58.141417Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.7967791557312012,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_num_qtrs.af7f1b7174"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:46:58.145225Z",
+          "completed_at": "2024-04-28T13:46:58.150574Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:46:58.150948Z",
+          "completed_at": "2024-04-28T13:46:59.130266Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.9868028163909912,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_num_tag.0207c00c1c"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:46:59.132880Z",
+          "completed_at": "2024-04-28T13:46:59.137931Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:46:59.138328Z",
+          "completed_at": "2024-04-28T13:46:59.760455Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.6291389465332031,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_num_uom.a092d9419c"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:46:59.763441Z",
+          "completed_at": "2024-04-28T13:46:59.768974Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:46:59.769376Z",
+          "completed_at": "2024-04-28T13:47:00.421950Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.6614220142364502,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_num_version.77a530fdb5"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:00.426217Z",
+          "completed_at": "2024-04-28T13:47:00.430849Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:00.431318Z",
+          "completed_at": "2024-04-28T13:47:01.282116Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.8575339317321777,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_accepted.14a16af61e"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:01.285026Z",
+          "completed_at": "2024-04-28T13:47:01.291269Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:01.291671Z",
+          "completed_at": "2024-04-28T13:47:02.075349Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.792208194732666,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_adsh.7840085517"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:02.078553Z",
+          "completed_at": "2024-04-28T13:47:02.084280Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:02.084738Z",
+          "completed_at": "2024-04-28T13:47:02.896155Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.819329023361206,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_cik.b09d93c4ac"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:02.899186Z",
+          "completed_at": "2024-04-28T13:47:02.904907Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:02.905368Z",
+          "completed_at": "2024-04-28T13:47:03.603580Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.7063040733337402,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_cityba.d43fdb914a"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:46:45.950891Z",
+          "completed_at": "2024-04-28T13:46:45.976832Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:46:45.991624Z",
+          "completed_at": "2024-04-28T13:47:04.059844Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 18.112982034683228,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.dbt_utils_unique_combination_of_columns_dera_num_adsh__tag__version__coreg__ddate__qtrs__uom.67da21a8d1"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:03.607202Z",
+          "completed_at": "2024-04-28T13:47:03.612664Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:03.613060Z",
+          "completed_at": "2024-04-28T13:47:04.343207Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.7388741970062256,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_cityma.e0529eeff9"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:04.064475Z",
+          "completed_at": "2024-04-28T13:47:04.069178Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:04.069636Z",
+          "completed_at": "2024-04-28T13:47:04.729484Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.6680240631103516,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_countryba.a60eb90641"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:04.347190Z",
+          "completed_at": "2024-04-28T13:47:04.351342Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:04.351719Z",
+          "completed_at": "2024-04-28T13:47:05.082368Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.7378590106964111,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_countryinc.6ddb770117"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:04.733840Z",
+          "completed_at": "2024-04-28T13:47:04.738664Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:04.739114Z",
+          "completed_at": "2024-04-28T13:47:05.363417Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.6325271129608154,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_countryma.1ac642f0ee"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:05.086402Z",
+          "completed_at": "2024-04-28T13:47:05.091093Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:05.091541Z",
+          "completed_at": "2024-04-28T13:47:05.785998Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.7022261619567871,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_detail.ca1aaddad4"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:05.367683Z",
+          "completed_at": "2024-04-28T13:47:05.372459Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:05.372920Z",
+          "completed_at": "2024-04-28T13:47:06.056531Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.6918363571166992,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_form.f00a6ea664"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:05.789847Z",
+          "completed_at": "2024-04-28T13:47:05.794069Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:05.794463Z",
+          "completed_at": "2024-04-28T13:47:06.537110Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.7499871253967285,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_fp.1365472feb"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:06.060762Z",
+          "completed_at": "2024-04-28T13:47:06.065349Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:06.065781Z",
+          "completed_at": "2024-04-28T13:47:06.774254Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.7165439128875732,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_fy.65804aa8b8"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:06.541275Z",
+          "completed_at": "2024-04-28T13:47:06.546354Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:06.546851Z",
+          "completed_at": "2024-04-28T13:47:07.168952Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.6300830841064453,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_fye.6321eacfb4"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:06.778594Z",
+          "completed_at": "2024-04-28T13:47:06.782884Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:06.783256Z",
+          "completed_at": "2024-04-28T13:47:07.511519Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.7563810348510742,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_instance.88ce3242b5"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:07.172321Z",
+          "completed_at": "2024-04-28T13:47:07.176740Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:07.177149Z",
+          "completed_at": "2024-04-28T13:47:07.963187Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.793346643447876,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_name.c7c4776c8f"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:07.536970Z",
+          "completed_at": "2024-04-28T13:47:07.542025Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:07.542464Z",
+          "completed_at": "2024-04-28T13:47:08.270848Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.7364792823791504,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_nciks.6409f1da5c"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:07.967137Z",
+          "completed_at": "2024-04-28T13:47:08.025690Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:08.026225Z",
+          "completed_at": "2024-04-28T13:47:08.756315Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.7917370796203613,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_period.2f29ed92e0"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:08.274744Z",
+          "completed_at": "2024-04-28T13:47:08.281436Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:08.281984Z",
+          "completed_at": "2024-04-28T13:47:08.996105Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.7233362197875977,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_prevrpt.332f49b983"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:08.771335Z",
+          "completed_at": "2024-04-28T13:47:08.795067Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:08.796005Z",
+          "completed_at": "2024-04-28T13:47:09.555558Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.792428731918335,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_sub_wksi.2b689b26df"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:09.001733Z",
+          "completed_at": "2024-04-28T13:47:09.013351Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:09.013899Z",
+          "completed_at": "2024-04-28T13:47:09.873992Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.8819029331207275,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_tag_abstract.0eb052e487"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:09.564480Z",
+          "completed_at": "2024-04-28T13:47:09.576550Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:09.577142Z",
+          "completed_at": "2024-04-28T13:47:10.318208Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.7583510875701904,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_tag_custom.83ea4d3d09"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:09.888789Z",
+          "completed_at": "2024-04-28T13:47:09.904165Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:09.905305Z",
+          "completed_at": "2024-04-28T13:47:10.627207Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.7460651397705078,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_tag_iord.18714c69d6"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:10.322268Z",
+          "completed_at": "2024-04-28T13:47:10.326814Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:10.327245Z",
+          "completed_at": "2024-04-28T13:47:11.031995Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 0.7334659099578857,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_tag_tag.fd8a9676a2"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:10.634298Z",
+          "completed_at": "2024-04-28T13:47:10.642587Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:10.644385Z",
+          "completed_at": "2024-04-28T13:47:11.328634Z"
+        }
+      ],
+      "thread_id": "Thread-1 (worker)",
+      "execution_time": 0.6962213516235352,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.not_null_dera_tag_version.8f1dd6934e"
+    },
+    {
+      "status": "pass",
+      "timing": [
+        {
+          "name": "compile",
+          "started_at": "2024-04-28T13:47:11.062104Z",
+          "completed_at": "2024-04-28T13:47:11.071966Z"
+        },
+        {
+          "name": "execute",
+          "started_at": "2024-04-28T13:47:11.073005Z",
+          "completed_at": "2024-04-28T13:47:12.405289Z"
+        }
+      ],
+      "thread_id": "Thread-2 (worker)",
+      "execution_time": 1.3467161655426025,
+      "adapter_response": {},
+      "message": null,
+      "failures": 0,
+      "unique_id": "test.dera_transform.unique_dera_sub_adsh.caa0cfea70"
+    }
+  ],
+  "elapsed_time": 26.77405309677124,
+  "args": {
+    "write_json": true,
+    "use_colors": true,
+    "printer_width": 80,
+    "version_check": true,
+    "partial_parse": true,
+    "static_parser": true,
+    "profiles_dir": "/Users/michael/Documents/GitHub",
+    "send_anonymous_usage_stats": true,
+    "quiet": false,
+    "no_print": false,
+    "cache_selected_only": false,
+    "indirect_selection": "eager",
+    "which": "test",
+    "rpc_method": "test"
+  }
+}
